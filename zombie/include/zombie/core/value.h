@@ -184,7 +184,7 @@ SpatialGradient<T, DIM>& operator-=(SpatialGradient<T, DIM>& lhs, const SpatialG
 template <typename T, int DIM>
 SpatialGradient<T, DIM>& operator/=(SpatialGradient<T, DIM>& lhs, const float &rhs) {
 	for (int i = 0; i < DIM; i++)
-		lhs.data[i] -= rhs;
+		lhs.data[i] /= rhs;
 	return lhs;
 }
 
